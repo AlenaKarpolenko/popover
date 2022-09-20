@@ -1,8 +1,7 @@
-import CardValidatorWidget from './CardValidatorWidget';
-import CardValidator from './CardValidator';
+import Popover from './Popover';
 
-const cardValidatorWidget = new CardValidatorWidget();
-cardValidatorWidget.bindToDOM(document.querySelector('#card_validator_widget_container'));
+const container = document.querySelector('.container');
 
-const cardValidator = new CardValidator(cardValidatorWidget);
-cardValidator.init();
+const popover = new Popover(container);
+
+popover.init();
